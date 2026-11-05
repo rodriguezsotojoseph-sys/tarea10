@@ -1,0 +1,41 @@
+
+#contenedor{
+    border: 1px solid black;
+    width: 95%;
+    height: 450px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas: 
+    "cabezai cabezaci cabezacd cabezad"
+    "bodyi bodyci bodycd bodyd"
+    "piei pieci piecd pied";
+    gap:10px;
+    text-align: center;
+    color: white;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+.uno , .dos , .cuatro{
+    background-color: green;
+    border: 1px solid black;
+    align-content: center;
+}
+.tres , .siete , .ocho {
+    background-color: red;
+    border: 1px solid black;
+    align-content: center;
+}
+.cinco , .seis{
+    background-color: orange;
+    border: 1px solid black;
+    align-content: center;
+}
+.uno{grid-area: cabezai/bodyi/piei;}
+.dos{grid-area: cabezaci / cabezaci / cabezaci / cabezacd;}
+.tres{grid-area: cabezad;}
+.cuatro{grid-area: bodyd/bodyd/pied/pied;}
+.cinco{grid-area: bodyci;}
+.seis{grid-area: piecd;}
+.siete{grid-area: bodycd;}
+.ocho{grid-area: pieci;}
